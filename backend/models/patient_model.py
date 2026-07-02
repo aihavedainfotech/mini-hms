@@ -10,7 +10,6 @@ class Patient(db.Model):
 
     phone = db.Column(
         db.String(15),
-        unique=True,
         nullable=False
     )
 

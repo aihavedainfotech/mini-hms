@@ -1,0 +1,8 @@
+{
+  "name": "mini-hms-frontend",
+  "version": "1.0.0",
+  "description": "Mini HMS Frontend",
+  "scripts": {
+    "dev": "python -m http.server 3000 --bind 127.0.0.1"
+  }
+}
