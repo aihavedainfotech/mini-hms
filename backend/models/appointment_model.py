@@ -25,3 +25,8 @@ class Appointment(db.Model):
         db.String(20),
         default="Scheduled"
     )
+    doctor_id = db.Column(db.Integer, db.ForeignKey("doctors.doctor_id"), nullable=True)
+    doctor_name = db.Column(db.String(100), nullable=True)
+
+    diagnosis = db.Column(db.Text, nullable=True)
+    prescription = db.Column(db.Text, nullable=True)
